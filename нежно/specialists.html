@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Нежно — пространство психологической поддержки, знаний и взаимопомощи.">
+<title>Подбор специалиста — нежно</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">нежно</a>
+    <button class="menu-toggle" aria-label="Открыть меню" onclick="document.querySelector('.nav').classList.toggle('open')">Меню</button>
+    <nav class="nav">
+      <a href="theory.html">Теория</a>
+      <a href="specialists.html">Специалисты</a>
+      <a href="help.html">Срочная помощь</a>
+      <a href="forum.html">Форум</a>
+      <a href="index.html#about">О нас</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero"><div class="container"><div class="eyebrow">профессиональная поддержка</div><h1>Найти своего специалиста</h1><p>Подбор должен учитывать не только тему запроса, но и место проживания, формат консультации, бюджет и квалификацию специалиста.</p></div></section>
+<section class="section alt"><div class="container two-col">
+ <div><div class="kicker">подбор по параметрам</div><h2>С чего начать поиск?</h2><p class="section-intro">Заполни поля в демонстрационной форме. Сейчас она показывает пример сценария и не отправляет данные реальным специалистам.</p>
+ <div class="notice">Перед публикацией каталога необходимо проверять образование, квалификацию, опыт и актуальность сведений о каждом специалисте.</div></div>
+ <form class="form-card" onsubmit="event.preventDefault();document.getElementById('result').style.display='block';document.getElementById('result').textContent='Это демонстрационная форма. На реальном сайте здесь появится список проверенных специалистов по выбранным параметрам.';">
+  <div class="form-grid">
+   <div><label for="city">Город / регион</label><input id="city" placeholder="Например, Москва"></div>
+   <div><label for="format">Формат консультации</label><select id="format"><option>Неважно</option><option>Онлайн</option><option>Очно</option></select></div>
+   <div><label for="budget">Бюджет за консультацию</label><select id="budget"><option>Выберите диапазон</option><option>Бесплатно / льготно</option><option>До 1 500 ₽</option><option>1 500–3 000 ₽</option><option>3 000–5 000 ₽</option><option>Более 5 000 ₽</option></select></div>
+   <div><label for="topic">Тема обращения</label><select id="topic"><option>Выберите тему</option><option>Тревожность и стресс</option><option>Отношения</option><option>Самооценка</option><option>Учёба и работа</option><option>Другое</option></select></div>
+  </div>
+  <button class="button" type="submit">Показать подходящие варианты</button>
+  <div class="result" id="result" role="status"></div>
+ </form>
+</div></section>
+<section class="section"><div class="container"><div class="kicker">важно знать</div><h2>Как мы будем проверять специалистов</h2><div class="cards" style="margin-top:25px">
+ <article class="card"><div class="card-icon">✓</div><h3>Образование</h3><p>Проверка профильного образования и документов, подтверждающих квалификацию.</p></article>
+ <article class="card"><div class="card-icon">⌁</div><h3>Опыт и специализация</h3><p>Понятное описание практического опыта и направлений работы специалиста.</p></article>
+ <article class="card"><div class="card-icon">₽</div><h3>Прозрачные условия</h3><p>Стоимость, длительность, формат консультации и правила отмены заранее.</p></article>
+ </div></div></section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <a class="brand" href="index.html">нежно</a>
+    <small>© 2026 «нежно». Все права защищены.</small>
+    <small>Информационный проект, не заменяющий профессиональную помощь.</small>
+  </div>
+</footer>
+</body>
+</html>
